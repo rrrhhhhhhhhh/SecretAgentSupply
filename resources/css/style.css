@@ -3,7 +3,12 @@ html {
 }
 
 body {
-  font-family: helvetica;
+  font-family: helvetica
+
+}
+
+div {
+  display: block;
 }
 
 .container {
@@ -14,9 +19,9 @@ body {
 /* Header */
 
 .header {
-  font-family: helvetica;
   font-size: 1rem;
   background-color: black;
+  padding: 0.66rem 0;
 }
 
 .header img {
@@ -26,7 +31,6 @@ body {
 }
 
 .header span {
-  padding: 0.66rem;
   color: white;
   align-items: center;
 }
@@ -36,23 +40,31 @@ body {
 .main-banner {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.headline h1 {
-  font-family: helvetica;
-  font-size: 2rem;
-  font-weight: bold;
-  padding-left: 3rem;
-  padding-top: 0.25rem;
+.headline {
+  background-color: black;
   color: white;
+  width: 20rem;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
 }
 
-.headline h4 {
-  font-family: helvetica;
-  font-size: 1rem;
+h1, h4 {
   font-weight: bold;
-  padding-top: 2rem;
-  color: white;
+}
+
+h1 {
+font-size: 2rem;
+padding-top: 0.25rem 0
+}
+
+h4 {
+font-size: 1rem;
 }
 
 .main-banner.container {
@@ -81,6 +93,66 @@ li {
 
 /* Product and Info */
 
+.product {
+  width: 30%;
+}
+
+.products, .info {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 3rem 0 0 0;
+}
+
+.product-image {
+  border: 4px solid black;
+  padding: 2rem 0;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 30%;
+}
+
+.description {
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+  background-color: black;
+}
+
+.watch {
+
+}
+
+.pen {
+
+}
+
+.glasses {
+
+}
+
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  color: white;
+  background-color: black;
+  padding: 1rem 2rem;
+  display: block;
+}
+
+.info span {
+  color:
+}
+
 /* Footer */
 
 footer {
@@ -88,4 +160,5 @@ footer {
   background-color: black;
   padding: 5em 0;
   margin-top: 4em;
+  text-align: left;
 }
