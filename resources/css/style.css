@@ -100,10 +100,6 @@ nav ul {
   justify-content: space-between;
 }
 
-.product {
-  width: 30%
-}
-
 .product-image {
   display: flex;
   border: 4px solid black;
