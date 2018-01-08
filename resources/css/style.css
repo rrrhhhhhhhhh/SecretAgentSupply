@@ -140,11 +140,11 @@ nav ul {
 }
 
 @media only screen and (max-width: 1024px) {
-  .product {
-    width: 47%;
+  .products {
+    height: 47%;
   }
 
-  .product.glasses {
+  .products .glasses {
     display: none;
   }
 }
@@ -155,18 +155,43 @@ nav ul {
     flex-wrap: wrap;
   }
 
-  .product {
+  .products {
     width: 90%;
     margin: auto;
   }
 
-  .product.watch {
+  .products .pen {
+    justify-content: center;
+  }
+
+  .products .watch{
     display: none;
   }
 
   .info {
     width: 90%;
     margin: 0.5em auto;
+  }
+
+  h4 {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .main-banner {
+    height: 15rem;
+  }
+
+  .headline {
+    padding-top: 1 rem;
+    padding-left: 2rem;
   }
 }
 
